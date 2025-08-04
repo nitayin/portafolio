@@ -1,0 +1,152 @@
+/* Paleta de Colores:
+#1a1a2e (fondo oscuro)
+#16213e (fondo oscuro secundario)
+#e94560 (rojo vibrante para acentos)
+#ffffff (blanco para texto)
+#999999 (gris claro para texto secundario)
+*/
+
+/* Estilos Generales y Tipografía */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #e94560;
+}
+
+a {
+    color: #e94560;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* Estilo del Header y Footer */
+header, footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #16213e;
+}
+
+header {
+    border-bottom: 2px solid #e94560;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #999999;
+}
+
+footer {
+    border-top: 2px solid #e94560;
+    margin-top: 2rem;
+}
+
+/* Estilos de las Secciones Principales */
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: #16213e;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #e94560;
+    padding-bottom: 0.5rem;
+}
+
+/* Estilos Específicos de "Sobre mí" */
+.sobre_mi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sobre_mi img {
+    border-radius: 50%;
+    border: 4px solid #e94560;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.sobre_mi img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos de Listas (Habilidades y Contacto) */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+ul li {
+    background-color: #1a1a2e;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid #e94560;
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #e94560;
+}
+
+ul li a {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+ul li a i {
+    font-size: 1.2rem;
+}
+
+/* Estilos de Proyectos */
+.proyectos article {
+    margin-bottom: 1.5rem;
+    border: 1px solid #e94560;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.proyectos article a {
+    background-color: #e94560;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.proyectos article a:hover {
+    background-color: #ff6f8a;
+}
